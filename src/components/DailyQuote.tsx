@@ -5,7 +5,9 @@ interface Quote {
     a: string
 }
 
-const apiURL: string = "https://cors-anywhere.herokuapp.com/https://zenquotes.io/api/today/";
+// https://cors-anywhere.herokuapp.com/https://zenquotes.io/api/today/
+
+const apiURL: string = "https://zenquotes.io/api/today/";
 
 const DailyQuote: React.FC = () => {
     const [randomQuote, setRandomQuote] = useState<Quote[] | null>(null);
